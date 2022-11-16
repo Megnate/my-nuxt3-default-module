@@ -49,13 +49,8 @@ export default defineNuxtConfig({
     middleware: './src/middleware',
     pages: './src/pages',
   },
-  devServer: {
-    host: 'localhost',
-    port: 8888,
-    url: 'http://localhost:8888',
-  },
   appConfig: {
-    // 定义的是全局的变量，可以是页面layouts的默认配置，此处可以是引用外部的文件
-    theme: 'default',
+    // 一般在外部的app.config.ts文件中定义
+    // theme: 'default',
   },
 })

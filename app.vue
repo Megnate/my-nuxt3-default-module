@@ -1,7 +1,6 @@
-<script setup lang="ts">
-// import Helloworld from './src/pages/Helloworld.vue'
-import Test from '@c/Test.vue'
-// import Test from '@@/src/components/Test.vue'
+<script setup lang="ts" name="app">
+import Todo from '@c/todo/Todo.vue'
+
 const runtimeConfigKey = useRuntimeConfig()
 const appConfigValue = useAppConfig()
 // const { curTime } = useGetTime()
@@ -12,6 +11,6 @@ const appConfigValue = useAppConfig()
     <!-- <NuxtWelcome /> -->
     {{ runtimeConfigKey }}
     {{ appConfigValue }}
-    <Test />
+    <Todo />
   </div>
 </template>
